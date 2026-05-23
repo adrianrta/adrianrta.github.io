@@ -137,6 +137,80 @@ a {
     }
 }
 
+/* Footer */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #000;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.socials a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socials a i {
+    font-size: 2em;
+    color: #000;
+    opacity: 0.9;
+}
+
+/* Socials hover effects */
+.socials a:hover {
+    background-color: #000;
+    transition: 0.25s;
+}
+
+.socials a:hover i {
+    color: #fff;
+    transition: 0.25s;
+}
+
+.footerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: #fff;
+
+    /* Lato font */
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (max-width: 768px) {
+
+    .footerNav ul {
+        flex-direction: column;
+    }
+
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px
+    }
+}
+
 /* Lato font */
 .lato-thin {
   font-family: "Lato", sans-serif;
