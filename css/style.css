@@ -89,13 +89,15 @@ a {
     margin: 3px;
 }
 
-/* Navbar responsive design */
+.header {
+    position: sticky;
+}
 
+/* Responsive design */
 @media (max-width: 768px) {
-
+    /* Navbar */
     nav {
         flex-wrap: wrap;
-        height: 111px;
     }
 
     .hamburger {
@@ -136,6 +138,16 @@ a {
 
     .nav-links .nav-cta-button:hover {
         color: #06b006;
+    }
+}
+
+/* Socials grid template (WIP, return to this later) */
+@media (max-width: 619px) {
+    .socials {
+        display: grid;
+        grid-template-areas:
+        "social-1 social-2 social-3"
+        "social-4 social-5 social-6 social-7";
     }
 }
 
