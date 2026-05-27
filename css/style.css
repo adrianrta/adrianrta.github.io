@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* Navbar */
 body {
     background-color: #000;
@@ -12,6 +16,24 @@ nav {
     padding: 0 20px;
     background-color: #000;
     z-index: 1;
+}
+
+p {
+    color: #fff;
+
+    /* Lato font */
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    color: #fff;
+
+    /* Lato font */
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 h3 {
@@ -211,6 +233,66 @@ footer {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+/* about.html - Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+
+.hero-section .text {
+    flex: 5;
+}
+
+.hero-section .text h1 {
+    font-size: 90px;
+}
+
+.hero-section .text p {
+    font-size: 32px;
+}
+
+.hero-section .headshot {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.hero-section .headshot img {
+    width: 450px;
+    border-radius: 50%;
+}
+
+@media (max-width: 850px) {
+    /* about.html - Hero Section */
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+
+    .hero-section .headshot img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 540px) {
+    /* about.html - Hero Section */
+    .hero-section {
+        padding: 0 20px;
+    }
+
+    .hero-section .text h1 {
+        font-size: 45px;
+    }
+
+    .hero-section .text p {
+        font-size: 24px;
+    }
 }
 
 /* Lato font */
